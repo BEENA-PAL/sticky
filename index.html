@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        /* padding: 2rem 3rem;
+         */
+        padding: 0;
+        background-color: #f7caf4;
+        display: inline-block;
+      }
+      #header {
+        text-align: center;
+        margin: 0;
+      }
+      #logo {
+        height: 250px;
+        width: 250px;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      #sticky {
+        background-color: rgb(72, 7, 82);
+        color: white;
+        border-radius: 2px;
+        font-size: 1.2rem;
+        padding: 1px 2px;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      h3 {
+        margin: 0;
+        background-color: #a29da2;
+        padding: 2px;
+        text-align: center;
+      }
+      #wolf {
+        text-align: center;
+        margin: 0;
+      }
+      #container {
+        text-align: center;
+      }
+      #ps {
+        font-family: cursive;
+        font-size: 1.2rem;
+      }
+      #message {
+        color: #3c033c;
+        font-size: 1.5 rem;
+        font-family: fantasy;
+      }
+      .sticky {
+        width: 100%;
+        position: fixed;
+        top: 0;
+      }
+      h4 {
+        margin: 10px;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="upper">
+      <div id="header">
+        <img src="image/final image  logo.png" alt="" id="logo" />
+      </div>
+
+      <br />
+      <br />
+
+      <div id="imageBottom">
+        <h3>
+          This page is for you. <br />
+          If you scroll up I will not be visible to you
+        </h3>
+      </div>
+    </div>
+
+    <div id="sticky">
+      <h4>
+        No matter you scroll up or down .I will always be with you. Because I
+        have given myself promise to make a better person in you.😁
+      </h4>
+    </div>
+
+    <div id="wolf">
+      <img id="wolf" src="image/wolf.jpg" alt="" />
+    </div>
+
+    <div id="container">
+      <h1>Dear Baby</h1>
+
+      <p id="message">
+        You got a task to finish. <br />
+        you are here for reason. <br />
+        you have to make mummy and papa proud.
+        <br />
+        and for that you have to go to any extent. do whatever it takes .
+        <br />
+        devote you time and money to achieve single goal.
+        <br />
+        set yourself deily task and finish that at any cost. and give yourself
+        small task to finish.
+        <br />
+        you can you wonders.
+      </p>
+
+      <hr />
+      <p id="ps">
+        I know that I have been hard on you every time . and i know at some
+        point you get frustated . but never let that thought come to your mind
+        that i should not listen to her. build yourself in such a way that you
+        grasp all good things and bad things comming from your loved ones. they
+        want better for you because its them who knows better in you and better
+        for you.
+        <br />
+      </p>
+    </div>
+
+    <script>
+      window.addEventListener("scroll", function () {
+        let store = document.getElementById("sticky");
+        if (window.pageYOffset >= 338) {
+          // console.log("djfklsjd");
+          store.classList.add("sticky");
+        } else {
+          store.classList.remove("sticky");
+        }
+      });
+    </script>
+  </body>
+</html>
